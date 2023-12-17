@@ -5,7 +5,8 @@ class BruteforceSolver : ISolver {
             val availableDudes = dudes.toMutableSet()
             for (santa in dudes) {
                 val possibleGiftReceivers = availableDudes.filter {
-                    it !== santa && santa to it !in bannedPairs && it to santa !in bannedPairs
+                    it !== santa && it to santa !in solution
+                            && santa to it !in bannedPairs && it to santa !in bannedPairs
                 }
                 if (possibleGiftReceivers.isEmpty()) {
                     println("Found ${solution.size} pairs before stuck. Retrying")
