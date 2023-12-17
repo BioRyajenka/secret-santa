@@ -1,6 +1,6 @@
 
 fun main() {
-    val asya = Dude("Ася", "")
+    val asya = Dude("Ася", Wishes.ASYA)
     val igor = Dude("Игорь", Wishes.IGOR)
     val lesha = Dude("Лёша", Wishes.LESHA)
     val ilyaBragin = Dude("Илья Брагин", Wishes.ILYA_BRAGIN)
