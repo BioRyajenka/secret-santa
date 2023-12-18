@@ -1,3 +1,4 @@
+import java.io.File
 
 fun main() {
     val asya = Dude("Ася", Wishes.ASYA)
@@ -18,6 +19,9 @@ fun main() {
     )
 
     solution.forEach { (santa, giftReceiver) ->
-        println("${santa.name} -> ${giftReceiver.name}")
+        File("${santa.name}.txt").printWriter().use { out ->
+            out.println("Твой подопечный: ${giftReceiver.name}\n\n" +
+                    "Вот его пожелание:\n${giftReceiver.wishes}")
+        }
     }
 }
