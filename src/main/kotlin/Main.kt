@@ -5,8 +5,8 @@ fun main() {
     val lesha = Dude("Лёша", Wishes.LESHA)
     val ilyaBragin = Dude("Илья Брагин", Wishes.ILYA_BRAGIN)
     val katya = Dude("Катя", Wishes.KATYA)
-    val ilyaKornienko = Dude("Илья Корниенко", "")
-    val anya = Dude("Аня", "")
+    val ilyaKornienko = Dude("Илья Корниенко", Wishes.ILYA_KORNIENKO)
+    val anya = Dude("Аня", Wishes.ANYA)
 
     val solution = BruteforceSolver().solve(
         listOf(asya, igor, lesha, ilyaBragin, katya, ilyaKornienko, anya),
